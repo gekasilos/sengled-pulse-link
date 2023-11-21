@@ -262,7 +262,7 @@ WHEN EQ changed to jazz and left + right channels:
  send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 00 00 | FF                             | 00 7E
  recv: 7E | 00 00 00 00 | FE FF FF FF | 04 00 00 00 | 00 00 00 00 | FF               | 00 7E
 
- send: 7E | FE FF FF FF | 56 00 02 00 | 04 00 01 00 | C0 6C 09 00 | 8D               | 00 7E +             8D = 0001FEB6 ; EA = 00020056
+ send: 7E | FE FF FF FF | 56 00 02 00 | 04 00 01 00 | C0 6C 09 00 | 8D               | 00 7E +             EA = 0001FEB6 ; 8D = 00020056
  send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 01 00 | C0 6C 09 00 | 35               | 00 7E +
 
  send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 00 00 | FF                             | 00 7E
