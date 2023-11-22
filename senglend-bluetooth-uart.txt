@@ -311,7 +311,7 @@ WHEN EQ changed to jazz and left + right channels:
  send: 7E | FE FF FF FF | 00 00 00 00 | 00 00 0C 00 | 00 00 07                       | 00 7E         query for light memory ?
  recv: 7E | 00 00 00 00 | FE FF FF FF | 00 00 0C 00 | 00 00 01 00 08                 | 00 7E         query for light memory ?
 
- send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 07 00 5A | 00 7E
+ send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 07 00 5A                               | 00 7E         blink lamp
  #####  END #####
  ################################################################################################
 
