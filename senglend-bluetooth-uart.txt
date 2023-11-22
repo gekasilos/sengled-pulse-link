@@ -268,17 +268,17 @@ WHEN EQ changed to jazz and left + right channels:
  send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 00 00 | FF                             | 00 7E
  recv: 7E | 00 00 00 00 | FE FF FF FF | 04 00 00 00 | C0 6C 09 00 | 34               | 00 7E
 
- send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 01 00 | 54                             | 00 7E
- recv: 7E | 56 00 02 00 | FE FF FF FF | 00 00 01 00 | 01 55                          | 00 7E
+ send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 01 00 | 54                             | 00 7E               B1 = 0001FEB6 ; 54 = 00020056
+ recv: 7E | 56 00 02 00 | FE FF FF FF | 00 00 01 00 | 01 55                          | 00 7E               01 B2 = 0001FEB6 ; 01 55 = 00020056 
 
- send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 02 00 | 00 00 00 00 | 56 00 02 00 | 59 | 00 7E
+ send: 7E | FE FF FF FF | 00 00 00 00 | 04 00 02 00 | 00 00 00 00 | 56 00 02 00 | 59 | 00 7E               B6 = 0001FEB6 ; 59 = 00020056
 
  send: 7E | FE FF FF FF | 00 00 00 00 | 00 00 02 00 | 00 FD                          | 00 7E
  recv: 7E | 00 00 00 00 | FE FF FF FF | 00 00 02 00 | 00 00 02 00 |
           | 00 00 00 00 | 56 00 02 00 | 00 00 00 00 | 00 00 00 00 |
           | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 |
           | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 |
-          | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 57               | 00 7E
+          | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 57               | 00 7E               0D = 0001FEB6 ; 57 = 00020056
 
  Query params again ?
  send: 7E | FE FF FF FF | 56 00 02 00 | 01 00 03 00 00 00 57                         | 00 7E          query to lamp 00020056 about light
@@ -311,7 +311,7 @@ WHEN EQ changed to jazz and left + right channels:
  send: 7E | FE FF FF FF | 00 00 00 00 | 00 00 0C 00 | 00 00 07                       | 00 7E         query for light memory ?
  recv: 7E | 00 00 00 00 | FE FF FF FF | 00 00 0C 00 | 00 00 01 00 08                 | 00 7E         query for light memory ?
 
- send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 07 00 5A                               | 00 7E         blink lamp
+ send: 7E | FE FF FF FF | 56 00 02 00 | 00 00 07 00 5A                               | 00 7E         blink lamp 5A = 00020056 ; B7 = 0001FEB6
  #####  END #####
  ################################################################################################
 
