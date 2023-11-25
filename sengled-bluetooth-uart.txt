@@ -49,15 +49,15 @@
                                                                 when 30         DB = 0x30 + 0xAB
                                                                 when 64         0F = 0x64 + 0xAB - 0x100
  Query for light % of 0001FEB6:
- send: 7E | FE FF FF FF | B6 FE 01 00 | 01 00 03 00 | 00 00 B4                      | 00 7E            why b4 ?
+ send: 7E | FE FF FF FF | B6 FE 01 00 | 01 00 03 00 | 00 00 B4                      | 00 7E            
  recv: 7E | B6 FE 01 00 | FE FF FF FF | 01 00 03 00 | 00 00 01 62 64 00 00 00 00 7B | 00 7E
 
  Query for volume % of 0001FEB6:
- send: 7E | FE FF FF FF | B6 FE 01 00 | 02 00 04 00 | 00 00 B6                      | 00 7E            why b6 ?
+ send: 7E | FE FF FF FF | B6 FE 01 00 | 02 00 04 00 | 00 00 B6                      | 00 7E            
  recv: 7E | B6 FE 01 00 | FE FF FF FF | 02 00 04 00 | 00 00 01 02 01 64 50 00 6E    | 00 7E
 
  Query CPU for light status:
- send: 7E | FE FF FF FF | 00 00 00 00 | 01 00 03 00 00 00 FF | 00 7E                                   FF because query to gw ?
+ send: 7E | FE FF FF FF | 00 00 00 00 | 01 00 03 00 00 00 FF | 00 7E                                  
  recv: 7E | 00 00 00 00 | FE FF FF FF | 01 00 03 00 00 00 01 62 64 00 00 00 00 C6 | 00 7E
  recv: 7E | 00 00 00 00 | FE FF FF FF | 01 00 03 00 00 00 01 38 64 00 00 00 00 9C | 00 7E
                                                           01 - off
@@ -66,7 +66,7 @@
                                                              53 - 83%          B6
 
  Query CPU for volume status:
- send: 7E | FE FF FF FF | 00 00 00 00 | 02 00 04 00 00 00 01 | 00 7E                                   01 because query to gw ?
+ send: 7E | FE FF FF FF | 00 00 00 00 | 02 00 04 00 00 00 01 | 00 7E                                   
  recv: 7E | 00 00 00 00 | FE FF FF FF | 02 00 04 00 00 00 02 02 01 64 50 01 BB | 00 7E
  recv: 7E | 00 00 00 00 | FE FF FF FF | 02 00 04 00 00 00 02 02 00 4E 50 01 A4 | 00 7E
                                                                 01 - volume off
@@ -293,7 +293,7 @@ WHEN EQ changed to jazz and left + right channels:
  send: 7E | FE FF FF FF | 00 00 00 00 | 02 00 04 00 00 00 01                         | 00 7E          query CPU about volume
  recv: 7E | 00 00 00 00 | FE FF FF FF | 02 00 04 00 00 00 00 05 00 4E 50 01 A5       | 00 7E
 
- send: 7E | FE FF FF FF | 00 00 00 00 | 00 00 00 00 | FB                             | 00 7E          get lamps info ?
+ send: 7E | FE FF FF FF | 00 00 00 00 | 00 00 00 00 | FB                             | 00 7E          get wireless audio info 
  recv: 7E | FE FF FF FF | FE FF FF FF | 00 00 00 00 | 43 30 31 2D |
             42 52 33 30 | 20 4C 69 6E | 6B 00 00 00 | 00 00 00 00 |                                   43 30 31 2D 42 52 33 30 20 4C 69 6E 6B = C01-BR30 Link
             00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 07 00 03 00 |
