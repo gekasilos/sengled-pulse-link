@@ -1,5 +1,5 @@
 # sengled-pulse-link
-Reverse engeneering senglend pulse link C01-BR30 gateway
+Reverse engeneering sengled pulse link C01-BR30 gateway
 
 ## sengled-bluetooth-uart.txt
 File contain recorded data via signal analyzer between bluetooth and CPU with my comments 
